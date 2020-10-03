@@ -1,0 +1,1655 @@
+/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/**
+ * Remove default margin.
+ */
+body {
+  margin: 0; }
+
+/* HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11
+ * and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block; }
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */ }
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
+ */
+[hidden],
+template {
+  display: none; }
+
+/* Links
+   ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+a {
+  background-color: transparent; }
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+a:active,
+a:hover {
+  outline: 0; }
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+b,
+strong {
+  font-weight: bold; }
+
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+dfn {
+  font-style: italic; }
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari, and Chrome.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+mark {
+  background: #ff0;
+  color: #000; }
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sup {
+  top: -0.5em; }
+
+sub {
+  bottom: -0.25em; }
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9/10.
+ */
+img {
+  border: 0; }
+
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari.
+ */
+figure {
+  margin: 1em 40px; }
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0; }
+
+/**
+ * Contain overflow in all browsers.
+ */
+pre {
+  overflow: auto; }
+
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em; }
+
+/* Forms
+   ========================================================================== */
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+  margin: 0;
+  /* 3 */ }
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+button {
+  overflow: visible; }
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+button,
+select {
+  text-transform: none; }
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */ }
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+button[disabled],
+html input[disabled] {
+  cursor: default; }
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+input {
+  line-height: normal; }
+
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome
+ *    (include `-moz` to future-proof).
+ */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box; }
+
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+textarea {
+  overflow: auto; }
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+optgroup {
+  font-weight: bold; }
+
+/* Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+td,
+th {
+  padding: 0; }
+
+/* roboto-condensed-regular - latin */
+@font-face {
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/roboto-condensed-v13-latin-regular.eot");
+  /* IE9 Compat Modes */
+  src: local("Roboto Condensed"), local("RobotoCondensed-Regular"), url("../fonts/roboto-condensed-v13-latin-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-condensed-v13-latin-regular.woff2") format("woff2"), url("../fonts/roboto-condensed-v13-latin-regular.woff") format("woff"), url("../fonts/roboto-condensed-v13-latin-regular.ttf") format("truetype"), url("../fonts/roboto-condensed-v13-latin-regular.svg#RobotoCondensed") format("svg");
+  /* Legacy iOS */ }
+
+@font-face {
+  font-family: 'BebasNeue';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/332C50_0_0.eot");
+  src: url("../fonts/332C50_0_0.eot?#iefix") format("embedded-opentype"), url("../fonts/332C50_0_0.woff2") format("woff2"), url("../fonts/332C50_0_0.woff") format("woff"), url("../fonts/332C50_0_0.ttf") format("truetype"); }
+
+html,
+body {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 1em;
+  color: #444;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  background: url("data:image/jpeg;base64,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") #dbc5b0 repeat; }
+
+h1 {
+  font-family: "BebasNeue", sans-serif;
+  font-size: 4.5em;
+  font-weight: normal;
+  text-shadow: 1px 1px 0 #FFFFFF, 4px 4px 0 #5db2a8;
+  letter-spacing: 0.1em;
+  margin: 0.2em 0 0.25em;
+  text-align: center; }
+
+p {
+  text-align: center; }
+
+a {
+  color: #444;
+  text-decoration: none;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s; }
+  a:hover {
+    color: #189184;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s; }
+  a.footer__link {
+    text-align: center;
+    display: block;
+    margin-top: 20px;
+    border-top: 1px solid #858585;
+    border-bottom: 1px solid #858585;
+    padding: 10px 0; }
+  a:hover {
+    border-color: #189184; }
+
+.tangram__container {
+  width: 750px;
+  height: 750px;
+  background-color: #f0e7df;
+  position: relative; }
+
+.badge {
+  height: 100px;
+  width: 100px;
+  background: #189184;
+  position: absolute;
+  top: -120px;
+  right: -50px;
+  -moz-transform: rotate(35deg) scale(0.8);
+  -o-transform: rotate(35deg) scale(0.8);
+  -ms-transform: rotate(35deg) scale(0.8);
+  -webkit-transform: rotate(35deg) scale(0.8);
+  transform: rotate(35deg) scale(0.8);
+  border-radius: 7px; }
+  .badge:before {
+    height: 100px;
+    width: 100px;
+    background: #189184;
+    content: "";
+    position: absolute;
+    -moz-transform: rotate(15deg);
+    -o-transform: rotate(15deg);
+    -ms-transform: rotate(15deg);
+    -webkit-transform: rotate(15deg);
+    transform: rotate(15deg);
+    border-radius: 7px; }
+  .badge:after {
+    height: 100px;
+    width: 100px;
+    background: #189184;
+    content: "css only";
+    color: #FFFFFF;
+    font-size: 40px;
+    text-align: center;
+    line-height: 35px;
+    padding-top: 7px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: "BebasNeue", sans-serif;
+    text-shadow: 1px 1px 0 #189184, 4px 4px 0 #444;
+    letter-spacing: 0.1em;
+    position: absolute;
+    -moz-transform: rotate(-15deg);
+    -o-transform: rotate(-15deg);
+    -ms-transform: rotate(-15deg);
+    -webkit-transform: rotate(-15deg);
+    transform: rotate(-15deg);
+    border-radius: 7px; }
+
+.badge__inner {
+  height: 100px;
+  width: 100px;
+  background: #189184;
+  position: absolute;
+  transform: rotate(45deg);
+  border-radius: 7px; }
+  .badge__inner:before {
+    height: 100px;
+    width: 100px;
+    background: #189184;
+    content: "";
+    position: absolute;
+    -moz-transform: rotate(15deg);
+    -o-transform: rotate(15deg);
+    -ms-transform: rotate(15deg);
+    -webkit-transform: rotate(15deg);
+    transform: rotate(15deg);
+    border-radius: 7px; }
+  .badge__inner:after {
+    height: 100px;
+    width: 100px;
+    background: #189184;
+    content: "";
+    position: absolute;
+    -moz-transform: rotate(-15deg);
+    -o-transform: rotate(-15deg);
+    -ms-transform: rotate(-15deg);
+    -webkit-transform: rotate(-15deg);
+    transform: rotate(-15deg);
+    border-radius: 7px; }
+
+.github-corner:hover .octo-arm {
+  animation: octocat-wave 560ms ease-in-out; }
+
+@keyframes octocat-wave {
+  0%, 100% {
+    transform: rotate(0); }
+  20%, 60% {
+    transform: rotate(-25deg); }
+  40%, 80% {
+    transform: rotate(10deg); } }
+
+@media (max-width: 500px) {
+  .github-corner:hover .octo-arm {
+    animation: none; }
+  .github-corner .octo-arm {
+    animation: octocat-wave 560ms ease-in-out; } }
+
+.triangle {
+  width: 0;
+  height: 0;
+  position: absolute;
+  transition: all 2s; }
+  .triangle--pink {
+    border-left: 50px solid #d2696a;
+    border-top: 50px solid transparent;
+    border-bottom: 50px solid transparent; }
+  .triangle--purple {
+    border-left: 50px solid #7e2b7c;
+    border-top: 50px solid transparent;
+    border-bottom: 50px solid transparent; }
+  .triangle--turquoise {
+    border-left: 70px solid #189184;
+    border-top: 70px solid transparent;
+    border-bottom: 70px solid transparent; }
+  .triangle--yellow {
+    border-left: 100px solid #FBC002;
+    border-top: 100px solid transparent;
+    border-bottom: 100px solid transparent; }
+  .triangle--orange {
+    border-left: 100px solid #F48400;
+    border-top: 100px solid transparent;
+    border-bottom: 100px solid transparent; }
+
+.square {
+  position: absolute;
+  transition: all 2s; }
+  .square--red {
+    background-color: #b20000;
+    width: 70px;
+    height: 70px; }
+
+.parallelogram {
+  position: absolute;
+  transition: all 2s; }
+  .parallelogram--green {
+    background-color: #81b442;
+    width: 64px;
+    height: 70px; }
+
+.tangram.main--tangram,
+.tangram__button {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.tangram {
+  position: absolute;
+  width: 450px;
+  height: 450px;
+  top: 150px;
+  left: 150px;
+  -moz-transition: all 1s;
+  -o-transition: all 1s;
+  -ms-transition: all 1s;
+  -webkit-transition: all 1s;
+  transition: all 1s; }
+
+input[type=radio].button--basic:checked ~ div.main--tangram,
+.tangram--basic {
+  padding: 124px 0 0 120px; }
+  input[type=radio].button--basic:checked ~ div.main--tangram .triangle--pink,
+  .tangram--basic .triangle--pink {
+    -moz-transform: translate(160px, -2px) rotate(180deg);
+    -o-transform: translate(160px, -2px) rotate(180deg);
+    -ms-transform: translate(160px, -2px) rotate(180deg);
+    -webkit-transform: translate(160px, -2px) rotate(180deg);
+    transform: translate(160px, -2px) rotate(180deg); }
+  input[type=radio].button--basic:checked ~ div.main--tangram .triangle--purple,
+  .tangram--basic .triangle--purple {
+    -moz-transform: translate(79px, 79px) rotate(270deg);
+    -o-transform: translate(79px, 79px) rotate(270deg);
+    -ms-transform: translate(79px, 79px) rotate(270deg);
+    -webkit-transform: translate(79px, 79px) rotate(270deg);
+    transform: translate(79px, 79px) rotate(270deg); }
+  input[type=radio].button--basic:checked ~ div.main--tangram .triangle--turquoise,
+  .tangram--basic .triangle--turquoise {
+    -moz-transform: translate(150px, 109px) rotate(45deg);
+    -o-transform: translate(150px, 109px) rotate(45deg);
+    -ms-transform: translate(150px, 109px) rotate(45deg);
+    -webkit-transform: translate(150px, 109px) rotate(45deg);
+    transform: translate(150px, 109px) rotate(45deg); }
+  input[type=radio].button--basic:checked ~ div.main--tangram .triangle--yellow,
+  .tangram--basic .triangle--yellow {
+    -moz-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0); }
+  input[type=radio].button--basic:checked ~ div.main--tangram .triangle--orange,
+  .tangram--basic .triangle--orange {
+    -moz-transform: translate(54px, -52px) rotate(90deg);
+    -o-transform: translate(54px, -52px) rotate(90deg);
+    -ms-transform: translate(54px, -52px) rotate(90deg);
+    -webkit-transform: translate(54px, -52px) rotate(90deg);
+    transform: translate(54px, -52px) rotate(90deg); }
+  input[type=radio].button--basic:checked ~ div.main--tangram .square--red,
+  .tangram--basic .square--red {
+    -moz-transform: translate(122px, 66px) rotate(45deg);
+    -o-transform: translate(122px, 66px) rotate(45deg);
+    -ms-transform: translate(122px, 66px) rotate(45deg);
+    -webkit-transform: translate(122px, 66px) rotate(45deg);
+    transform: translate(122px, 66px) rotate(45deg); }
+  input[type=radio].button--basic:checked ~ div.main--tangram .parallelogram--green,
+  .tangram--basic .parallelogram--green {
+    -moz-transform: translate(45px, 146px) rotate(-45deg) skew(45deg);
+    -o-transform: translate(45px, 146px) rotate(-45deg) skew(45deg);
+    -ms-transform: translate(45px, 146px) rotate(-45deg) skew(45deg);
+    -webkit-transform: translate(45px, 146px) rotate(-45deg) skew(45deg);
+    transform: translate(45px, 146px) rotate(-45deg) skew(45deg); }
+
+input[type=radio].button--cat:checked ~ div.main--tangram,
+.tangram--cat {
+  padding: 30px 0 0 75px; }
+  input[type=radio].button--cat:checked ~ div.main--tangram .triangle--purple,
+  .tangram--cat .triangle--purple {
+    -moz-transform: translate(52px, 0) rotate(180deg);
+    -o-transform: translate(52px, 0) rotate(180deg);
+    -ms-transform: translate(52px, 0) rotate(180deg);
+    -webkit-transform: translate(52px, 0) rotate(180deg);
+    transform: translate(52px, 0) rotate(180deg); }
+  input[type=radio].button--cat:checked ~ div.main--tangram .triangle--turquoise,
+  .tangram--cat .triangle--turquoise {
+    -moz-transform: translate(10px, 132px) rotate(180deg);
+    -o-transform: translate(10px, 132px) rotate(180deg);
+    -ms-transform: translate(10px, 132px) rotate(180deg);
+    -webkit-transform: translate(10px, 132px) rotate(180deg);
+    transform: translate(10px, 132px) rotate(180deg); }
+  input[type=radio].button--cat:checked ~ div.main--tangram .triangle--yellow,
+  .tangram--cat .triangle--yellow {
+    -moz-transform: translate(85px, 132px);
+    -o-transform: translate(85px, 132px);
+    -ms-transform: translate(85px, 132px);
+    -webkit-transform: translate(85px, 132px);
+    transform: translate(85px, 132px); }
+  input[type=radio].button--cat:checked ~ div.main--tangram .triangle--orange,
+  .tangram--cat .triangle--orange {
+    -moz-transform: translate(100px, 245px) rotate(45deg);
+    -o-transform: translate(100px, 245px) rotate(45deg);
+    -ms-transform: translate(100px, 245px) rotate(45deg);
+    -webkit-transform: translate(100px, 245px) rotate(45deg);
+    transform: translate(100px, 245px) rotate(45deg); }
+  input[type=radio].button--cat:checked ~ div.main--tangram .square--red,
+  .tangram--cat .square--red {
+    -moz-transform: translate(16px, 70px) rotate(45deg);
+    -o-transform: translate(16px, 70px) rotate(45deg);
+    -ms-transform: translate(16px, 70px) rotate(45deg);
+    -webkit-transform: translate(16px, 70px) rotate(45deg);
+    transform: translate(16px, 70px) rotate(45deg); }
+  input[type=radio].button--cat:checked ~ div.main--tangram .parallelogram--green,
+  .tangram--cat .parallelogram--green {
+    -moz-transform: translate(222px, 310px) skew(-45deg);
+    -o-transform: translate(222px, 310px) skew(-45deg);
+    -ms-transform: translate(222px, 310px) skew(-45deg);
+    -webkit-transform: translate(222px, 310px) skew(-45deg);
+    transform: translate(222px, 310px) skew(-45deg); }
+
+input[type=radio].button--swan:checked ~ div.main--tangram,
+.tangram--swan {
+  padding: 55px 0 0 110px; }
+  input[type=radio].button--swan:checked ~ div.main--tangram .triangle--pink,
+  .tangram--swan .triangle--pink {
+    -moz-transform: translate(-6px, 155px) rotate(0deg);
+    -o-transform: translate(-6px, 155px) rotate(0deg);
+    -ms-transform: translate(-6px, 155px) rotate(0deg);
+    -webkit-transform: translate(-6px, 155px) rotate(0deg);
+    transform: translate(-6px, 155px) rotate(0deg); }
+  input[type=radio].button--swan:checked ~ div.main--tangram .triangle--purple,
+  .tangram--swan .triangle--purple {
+    -moz-transform: translate(3px, 4px) rotate(45deg);
+    -o-transform: translate(3px, 4px) rotate(45deg);
+    -ms-transform: translate(3px, 4px) rotate(45deg);
+    -webkit-transform: translate(3px, 4px) rotate(45deg);
+    transform: translate(3px, 4px) rotate(45deg); }
+  input[type=radio].button--swan:checked ~ div.main--tangram .triangle--turquoise,
+  .tangram--swan .triangle--turquoise {
+    -moz-transform: translate(-3px, 189px) rotate(180deg);
+    -o-transform: translate(-3px, 189px) rotate(180deg);
+    -ms-transform: translate(-3px, 189px) rotate(180deg);
+    -webkit-transform: translate(-3px, 189px) rotate(180deg);
+    transform: translate(-3px, 189px) rotate(180deg); }
+  input[type=radio].button--swan:checked ~ div.main--tangram .triangle--yellow,
+  .tangram--swan .triangle--yellow {
+    -moz-transform: translate(57px, 194px) rotate(135deg);
+    -o-transform: translate(57px, 194px) rotate(135deg);
+    -ms-transform: translate(57px, 194px) rotate(135deg);
+    -webkit-transform: translate(57px, 194px) rotate(135deg);
+    transform: translate(57px, 194px) rotate(135deg); }
+  input[type=radio].button--swan:checked ~ div.main--tangram .triangle--orange,
+  .tangram--swan .triangle--orange {
+    -moz-transform: translate(127px, 136px) rotate(90deg);
+    -o-transform: translate(127px, 136px) rotate(90deg);
+    -ms-transform: translate(127px, 136px) rotate(90deg);
+    -webkit-transform: translate(127px, 136px) rotate(90deg);
+    transform: translate(127px, 136px) rotate(90deg); }
+  input[type=radio].button--swan:checked ~ div.main--tangram .square--red,
+  .tangram--swan .square--red {
+    -moz-transform: translate(12px, 116px) rotate(45deg);
+    -o-transform: translate(12px, 116px) rotate(45deg);
+    -ms-transform: translate(12px, 116px) rotate(45deg);
+    -webkit-transform: translate(12px, 116px) rotate(45deg);
+    transform: translate(12px, 116px) rotate(45deg); }
+  input[type=radio].button--swan:checked ~ div.main--tangram .parallelogram--green,
+  .tangram--swan .parallelogram--green {
+    -moz-transform: translate(42px, 38px) rotate(45deg) skew(45deg);
+    -o-transform: translate(42px, 38px) rotate(45deg) skew(45deg);
+    -ms-transform: translate(42px, 38px) rotate(45deg) skew(45deg);
+    -webkit-transform: translate(42px, 38px) rotate(45deg) skew(45deg);
+    transform: translate(42px, 38px) rotate(45deg) skew(45deg); }
+
+input[type=radio].button--rabbit:checked ~ div.main--tangram,
+.tangram--rabbit {
+  padding: 23px 0 0 105px; }
+  input[type=radio].button--rabbit:checked ~ div.main--tangram .triangle--pink,
+  .tangram--rabbit .triangle--pink {
+    -moz-transform: translate(61px, 333px) rotate(45deg);
+    -o-transform: translate(61px, 333px) rotate(45deg);
+    -ms-transform: translate(61px, 333px) rotate(45deg);
+    -webkit-transform: translate(61px, 333px) rotate(45deg);
+    transform: translate(61px, 333px) rotate(45deg); }
+  input[type=radio].button--rabbit:checked ~ div.main--tangram .triangle--purple,
+  .tangram--rabbit .triangle--purple {
+    -moz-transform: translate(20px, 210px) rotate(180deg);
+    -o-transform: translate(20px, 210px) rotate(180deg);
+    -ms-transform: translate(20px, 210px) rotate(180deg);
+    -webkit-transform: translate(20px, 210px) rotate(180deg);
+    transform: translate(20px, 210px) rotate(180deg); }
+  input[type=radio].button--rabbit:checked ~ div.main--tangram .triangle--turquoise,
+  .tangram--rabbit .triangle--turquoise {
+    -moz-transform: translate(99px, 307px) rotate(135deg);
+    -o-transform: translate(99px, 307px) rotate(135deg);
+    -ms-transform: translate(99px, 307px) rotate(135deg);
+    -webkit-transform: translate(99px, 307px) rotate(135deg);
+    transform: translate(99px, 307px) rotate(135deg); }
+  input[type=radio].button--rabbit:checked ~ div.main--tangram .triangle--yellow,
+  .tangram--rabbit .triangle--yellow {
+    -moz-transform: translate(60px, 120px) rotate(135deg);
+    -o-transform: translate(60px, 120px) rotate(135deg);
+    -ms-transform: translate(60px, 120px) rotate(135deg);
+    -webkit-transform: translate(60px, 120px) rotate(135deg);
+    transform: translate(60px, 120px) rotate(135deg); }
+  input[type=radio].button--rabbit:checked ~ div.main--tangram .triangle--orange,
+  .tangram--rabbit .triangle--orange {
+    -moz-transform: translate(130px, 196px) rotate(-45deg);
+    -o-transform: translate(130px, 196px) rotate(-45deg);
+    -ms-transform: translate(130px, 196px) rotate(-45deg);
+    -webkit-transform: translate(130px, 196px) rotate(-45deg);
+    transform: translate(130px, 196px) rotate(-45deg); }
+  input[type=radio].button--rabbit:checked ~ div.main--tangram .square--red,
+  .tangram--rabbit .square--red {
+    -moz-transform: translate(0, 74px) rotate(0deg);
+    -o-transform: translate(0, 74px) rotate(0deg);
+    -ms-transform: translate(0, 74px) rotate(0deg);
+    -webkit-transform: translate(0, 74px) rotate(0deg);
+    transform: translate(0, 74px) rotate(0deg); }
+  input[type=radio].button--rabbit:checked ~ div.main--tangram .parallelogram--green,
+  .tangram--rabbit .parallelogram--green {
+    -moz-transform: translate(76px, 0px) skew(-45deg);
+    -o-transform: translate(76px, 0px) skew(-45deg);
+    -ms-transform: translate(76px, 0px) skew(-45deg);
+    -webkit-transform: translate(76px, 0px) skew(-45deg);
+    transform: translate(76px, 0px) skew(-45deg); }
+
+input[type=radio].button--bat:checked ~ div.main--tangram,
+.tangram--bat {
+  padding: 0;
+  -moz-transform: rotate(20deg);
+  -o-transform: rotate(20deg);
+  -ms-transform: rotate(20deg);
+  -webkit-transform: rotate(20deg);
+  transform: rotate(20deg); }
+  input[type=radio].button--bat:checked ~ div.main--tangram .triangle--pink,
+  .tangram--bat .triangle--pink {
+    -moz-transform: translate(168px, 85px) rotate(0deg);
+    -o-transform: translate(168px, 85px) rotate(0deg);
+    -ms-transform: translate(168px, 85px) rotate(0deg);
+    -webkit-transform: translate(168px, 85px) rotate(0deg);
+    transform: translate(168px, 85px) rotate(0deg); }
+  input[type=radio].button--bat:checked ~ div.main--tangram .triangle--purple,
+  .tangram--bat .triangle--purple {
+    -moz-transform: translate(224px, 85px) rotate(180deg);
+    -o-transform: translate(224px, 85px) rotate(180deg);
+    -ms-transform: translate(224px, 85px) rotate(180deg);
+    -webkit-transform: translate(224px, 85px) rotate(180deg);
+    transform: translate(224px, 85px) rotate(180deg); }
+  input[type=radio].button--bat:checked ~ div.main--tangram .triangle--turquoise,
+  .tangram--bat .triangle--turquoise {
+    -moz-transform: translate(227px, 214px) rotate(90deg);
+    -o-transform: translate(227px, 214px) rotate(90deg);
+    -ms-transform: translate(227px, 214px) rotate(90deg);
+    -webkit-transform: translate(227px, 214px) rotate(90deg);
+    transform: translate(227px, 214px) rotate(90deg); }
+  input[type=radio].button--bat:checked ~ div.main--tangram .triangle--yellow,
+  .tangram--bat .triangle--yellow {
+    -moz-transform: translate(70px, 94px) rotate(-90deg);
+    -o-transform: translate(70px, 94px) rotate(-90deg);
+    -ms-transform: translate(70px, 94px) rotate(-90deg);
+    -webkit-transform: translate(70px, 94px) rotate(-90deg);
+    transform: translate(70px, 94px) rotate(-90deg); }
+  input[type=radio].button--bat:checked ~ div.main--tangram .triangle--orange,
+  .tangram--bat .triangle--orange {
+    -moz-transform: translate(272px, 94px) rotate(-90deg);
+    -o-transform: translate(272px, 94px) rotate(-90deg);
+    -ms-transform: translate(272px, 94px) rotate(-90deg);
+    -webkit-transform: translate(272px, 94px) rotate(-90deg);
+    transform: translate(272px, 94px) rotate(-90deg); }
+  input[type=radio].button--bat:checked ~ div.main--tangram .square--red,
+  .tangram--bat .square--red {
+    -moz-transform: translate(186px, 153px) rotate(45deg);
+    -o-transform: translate(186px, 153px) rotate(45deg);
+    -ms-transform: translate(186px, 153px) rotate(45deg);
+    -webkit-transform: translate(186px, 153px) rotate(45deg);
+    transform: translate(186px, 153px) rotate(45deg); }
+  input[type=radio].button--bat:checked ~ div.main--tangram .parallelogram--green,
+  .tangram--bat .parallelogram--green {
+    -moz-transform: translate(157px, 249px) rotate(0deg) skew(45deg);
+    -o-transform: translate(157px, 249px) rotate(0deg) skew(45deg);
+    -ms-transform: translate(157px, 249px) rotate(0deg) skew(45deg);
+    -webkit-transform: translate(157px, 249px) rotate(0deg) skew(45deg);
+    transform: translate(157px, 249px) rotate(0deg) skew(45deg); }
+
+input[type=radio].button--bear:checked ~ div.main--tangram,
+.tangram--bear {
+  padding: 0; }
+  input[type=radio].button--bear:checked ~ div.main--tangram .triangle--pink,
+  .tangram--bear .triangle--pink {
+    -moz-transform: translate(59px, 122px) rotate(45deg);
+    -o-transform: translate(59px, 122px) rotate(45deg);
+    -ms-transform: translate(59px, 122px) rotate(45deg);
+    -webkit-transform: translate(59px, 122px) rotate(45deg);
+    transform: translate(59px, 122px) rotate(45deg); }
+  input[type=radio].button--bear:checked ~ div.main--tangram .triangle--purple,
+  .tangram--bear .triangle--purple {
+    -moz-transform: translate(340px, 274px) rotate(45deg);
+    -o-transform: translate(340px, 274px) rotate(45deg);
+    -ms-transform: translate(340px, 274px) rotate(45deg);
+    -webkit-transform: translate(340px, 274px) rotate(45deg);
+    transform: translate(340px, 274px) rotate(45deg); }
+  input[type=radio].button--bear:checked ~ div.main--tangram .triangle--turquoise,
+  .tangram--bear .triangle--turquoise {
+    -moz-transform: translate(170px, 124px) rotate(135deg);
+    -o-transform: translate(170px, 124px) rotate(135deg);
+    -ms-transform: translate(170px, 124px) rotate(135deg);
+    -webkit-transform: translate(170px, 124px) rotate(135deg);
+    transform: translate(170px, 124px) rotate(135deg); }
+  input[type=radio].button--bear:checked ~ div.main--tangram .triangle--yellow,
+  .tangram--bear .triangle--yellow {
+    -moz-transform: translate(330px, 118px) rotate(0deg);
+    -o-transform: translate(330px, 118px) rotate(0deg);
+    -ms-transform: translate(330px, 118px) rotate(0deg);
+    -webkit-transform: translate(330px, 118px) rotate(0deg);
+    transform: translate(330px, 118px) rotate(0deg); }
+  input[type=radio].button--bear:checked ~ div.main--tangram .triangle--orange,
+  .tangram--bear .triangle--orange {
+    -moz-transform: translate(241px, 55px) rotate(-45deg);
+    -o-transform: translate(241px, 55px) rotate(-45deg);
+    -ms-transform: translate(241px, 55px) rotate(-45deg);
+    -webkit-transform: translate(241px, 55px) rotate(-45deg);
+    transform: translate(241px, 55px) rotate(-45deg); }
+  input[type=radio].button--bear:checked ~ div.main--tangram .square--red,
+  .tangram--bear .square--red {
+    -moz-transform: translate(106px, 120px) rotate(0deg);
+    -o-transform: translate(106px, 120px) rotate(0deg);
+    -ms-transform: translate(106px, 120px) rotate(0deg);
+    -webkit-transform: translate(106px, 120px) rotate(0deg);
+    transform: translate(106px, 120px) rotate(0deg); }
+  input[type=radio].button--bear:checked ~ div.main--tangram .parallelogram--green,
+  .tangram--bear .parallelogram--green {
+    -moz-transform: translate(145px, 222px) skew(-45deg);
+    -o-transform: translate(145px, 222px) skew(-45deg);
+    -ms-transform: translate(145px, 222px) skew(-45deg);
+    -webkit-transform: translate(145px, 222px) skew(-45deg);
+    transform: translate(145px, 222px) skew(-45deg); }
+
+input[type=radio].button--giraffe:checked ~ div.main--tangram,
+.tangram--giraffe {
+  padding: 0;
+  margin-top: -25px; }
+  input[type=radio].button--giraffe:checked ~ div.main--tangram .triangle--pink,
+  .tangram--giraffe .triangle--pink {
+    -moz-transform: translate(164px, 50px) rotate(0deg);
+    -o-transform: translate(164px, 50px) rotate(0deg);
+    -ms-transform: translate(164px, 50px) rotate(0deg);
+    -webkit-transform: translate(164px, 50px) rotate(0deg);
+    transform: translate(164px, 50px) rotate(0deg); }
+  input[type=radio].button--giraffe:checked ~ div.main--tangram .triangle--purple,
+  .tangram--giraffe .triangle--purple {
+    -moz-transform: translate(218px, 260px) rotate(180deg);
+    -o-transform: translate(218px, 260px) rotate(180deg);
+    -ms-transform: translate(218px, 260px) rotate(180deg);
+    -webkit-transform: translate(218px, 260px) rotate(180deg);
+    transform: translate(218px, 260px) rotate(180deg); }
+  input[type=radio].button--giraffe:checked ~ div.main--tangram .triangle--turquoise,
+  .tangram--giraffe .triangle--turquoise {
+    -moz-transform: translate(100px, 40px) rotate(45deg);
+    -o-transform: translate(100px, 40px) rotate(45deg);
+    -ms-transform: translate(100px, 40px) rotate(45deg);
+    -webkit-transform: translate(100px, 40px) rotate(45deg);
+    transform: translate(100px, 40px) rotate(45deg); }
+  input[type=radio].button--giraffe:checked ~ div.main--tangram .triangle--yellow,
+  .tangram--giraffe .triangle--yellow {
+    -moz-transform: translate(272px, 260px) rotate(0deg);
+    -o-transform: translate(272px, 260px) rotate(0deg);
+    -ms-transform: translate(272px, 260px) rotate(0deg);
+    -webkit-transform: translate(272px, 260px) rotate(0deg);
+    transform: translate(272px, 260px) rotate(0deg); }
+  input[type=radio].button--giraffe:checked ~ div.main--tangram .triangle--orange,
+  .tangram--giraffe .triangle--orange {
+    -moz-transform: translate(166px, 263px) rotate(0deg);
+    -o-transform: translate(166px, 263px) rotate(0deg);
+    -ms-transform: translate(166px, 263px) rotate(0deg);
+    -webkit-transform: translate(166px, 263px) rotate(0deg);
+    transform: translate(166px, 263px) rotate(0deg); }
+  input[type=radio].button--giraffe:checked ~ div.main--tangram .square--red,
+  .tangram--giraffe .square--red {
+    -moz-transform: translate(181px, 222px) rotate(45deg);
+    -o-transform: translate(181px, 222px) rotate(45deg);
+    -ms-transform: translate(181px, 222px) rotate(45deg);
+    -webkit-transform: translate(181px, 222px) rotate(45deg);
+    transform: translate(181px, 222px) rotate(45deg); }
+  input[type=radio].button--giraffe:checked ~ div.main--tangram .parallelogram--green,
+  .tangram--giraffe .parallelogram--green {
+    -moz-transform: translate(157px, 145px) rotate(135deg) skew(-45deg);
+    -o-transform: translate(157px, 145px) rotate(135deg) skew(-45deg);
+    -ms-transform: translate(157px, 145px) rotate(135deg) skew(-45deg);
+    -webkit-transform: translate(157px, 145px) rotate(135deg) skew(-45deg);
+    transform: translate(157px, 145px) rotate(135deg) skew(-45deg); }
+
+input[type=radio].button--fish:checked ~ div.main--tangram,
+.tangram--fish {
+  padding: 0 0 0 50px; }
+  input[type=radio].button--fish:checked ~ div.main--tangram .triangle--pink,
+  .tangram--fish .triangle--pink {
+    -moz-transform: translate(162px, 119px) rotate(135deg);
+    -o-transform: translate(162px, 119px) rotate(135deg);
+    -ms-transform: translate(162px, 119px) rotate(135deg);
+    -webkit-transform: translate(162px, 119px) rotate(135deg);
+    transform: translate(162px, 119px) rotate(135deg); }
+  input[type=radio].button--fish:checked ~ div.main--tangram .triangle--purple,
+  .tangram--fish .triangle--purple {
+    -moz-transform: translate(162px, 231px) rotate(225deg);
+    -o-transform: translate(162px, 231px) rotate(225deg);
+    -ms-transform: translate(162px, 231px) rotate(225deg);
+    -webkit-transform: translate(162px, 231px) rotate(225deg);
+    transform: translate(162px, 231px) rotate(225deg); }
+  input[type=radio].button--fish:checked ~ div.main--tangram .triangle--turquoise,
+  .tangram--fish .triangle--turquoise {
+    -moz-transform: translate(244px, 192px) rotate(180deg);
+    -o-transform: translate(244px, 192px) rotate(180deg);
+    -ms-transform: translate(244px, 192px) rotate(180deg);
+    -webkit-transform: translate(244px, 192px) rotate(180deg);
+    transform: translate(244px, 192px) rotate(180deg); }
+  input[type=radio].button--fish:checked ~ div.main--tangram .triangle--yellow,
+  .tangram--fish .triangle--yellow {
+    -moz-transform: translate(80px, 86px) rotate(45deg);
+    -o-transform: translate(80px, 86px) rotate(45deg);
+    -ms-transform: translate(80px, 86px) rotate(45deg);
+    -webkit-transform: translate(80px, 86px) rotate(45deg);
+    transform: translate(80px, 86px) rotate(45deg); }
+  input[type=radio].button--fish:checked ~ div.main--tangram .triangle--orange,
+  .tangram--fish .triangle--orange {
+    -moz-transform: translate(80px, 160px) rotate(-45deg);
+    -o-transform: translate(80px, 160px) rotate(-45deg);
+    -ms-transform: translate(80px, 160px) rotate(-45deg);
+    -webkit-transform: translate(80px, 160px) rotate(-45deg);
+    transform: translate(80px, 160px) rotate(-45deg); }
+  input[type=radio].button--fish:checked ~ div.main--tangram .square--red,
+  .tangram--fish .square--red {
+    -moz-transform: translate(169px, 190px) rotate(0deg);
+    -o-transform: translate(169px, 190px) rotate(0deg);
+    -ms-transform: translate(169px, 190px) rotate(0deg);
+    -webkit-transform: translate(169px, 190px) rotate(0deg);
+    transform: translate(169px, 190px) rotate(0deg); }
+  input[type=radio].button--fish:checked ~ div.main--tangram .parallelogram--green,
+  .tangram--fish .parallelogram--green {
+    -moz-transform: translate(246px, 155px) rotate(90deg) skew(45deg);
+    -o-transform: translate(246px, 155px) rotate(90deg) skew(45deg);
+    -ms-transform: translate(246px, 155px) rotate(90deg) skew(45deg);
+    -webkit-transform: translate(246px, 155px) rotate(90deg) skew(45deg);
+    transform: translate(246px, 155px) rotate(90deg) skew(45deg); }
+
+input[type=radio].button--snake:checked ~ div.main--tangram,
+.tangram--snake {
+  padding: 0 0 0 12px;
+  -moz-transform: scale(0.8);
+  -o-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  -webkit-transform: scale(0.8);
+  transform: scale(0.8); }
+  input[type=radio].button--snake:checked ~ div.main--tangram .triangle--pink,
+  .tangram--snake .triangle--pink {
+    -moz-transform: translate(7px, 162px) rotate(45deg);
+    -o-transform: translate(7px, 162px) rotate(45deg);
+    -ms-transform: translate(7px, 162px) rotate(45deg);
+    -webkit-transform: translate(7px, 162px) rotate(45deg);
+    transform: translate(7px, 162px) rotate(45deg); }
+  input[type=radio].button--snake:checked ~ div.main--tangram .triangle--purple,
+  .tangram--snake .triangle--purple {
+    -moz-transform: translate(-30px, 134px) rotate(90deg);
+    -o-transform: translate(-30px, 134px) rotate(90deg);
+    -ms-transform: translate(-30px, 134px) rotate(90deg);
+    -webkit-transform: translate(-30px, 134px) rotate(90deg);
+    transform: translate(-30px, 134px) rotate(90deg); }
+  input[type=radio].button--snake:checked ~ div.main--tangram .triangle--turquoise,
+  .tangram--snake .triangle--turquoise {
+    -moz-transform: translate(116px, 165px) rotate(135deg);
+    -o-transform: translate(116px, 165px) rotate(135deg);
+    -ms-transform: translate(116px, 165px) rotate(135deg);
+    -webkit-transform: translate(116px, 165px) rotate(135deg);
+    transform: translate(116px, 165px) rotate(135deg); }
+  input[type=radio].button--snake:checked ~ div.main--tangram .triangle--yellow,
+  .tangram--snake .triangle--yellow {
+    -moz-transform: translate(281px, 109px) rotate(-90deg);
+    -o-transform: translate(281px, 109px) rotate(-90deg);
+    -ms-transform: translate(281px, 109px) rotate(-90deg);
+    -webkit-transform: translate(281px, 109px) rotate(-90deg);
+    transform: translate(281px, 109px) rotate(-90deg); }
+  input[type=radio].button--snake:checked ~ div.main--tangram .triangle--orange,
+  .tangram--snake .triangle--orange {
+    -moz-transform: translate(176px, 213px) rotate(90deg);
+    -o-transform: translate(176px, 213px) rotate(90deg);
+    -ms-transform: translate(176px, 213px) rotate(90deg);
+    -webkit-transform: translate(176px, 213px) rotate(90deg);
+    transform: translate(176px, 213px) rotate(90deg); }
+  input[type=radio].button--snake:checked ~ div.main--tangram .square--red,
+  .tangram--snake .square--red {
+    -moz-transform: translate(53px, 160px) rotate(0deg);
+    -o-transform: translate(53px, 160px) rotate(0deg);
+    -ms-transform: translate(53px, 160px) rotate(0deg);
+    -webkit-transform: translate(53px, 160px) rotate(0deg);
+    transform: translate(53px, 160px) rotate(0deg); }
+  input[type=radio].button--snake:checked ~ div.main--tangram .parallelogram--green,
+  .tangram--snake .parallelogram--green {
+    -moz-transform: translate(374px, 250px) rotate(45deg) skew(-45deg);
+    -o-transform: translate(374px, 250px) rotate(45deg) skew(-45deg);
+    -ms-transform: translate(374px, 250px) rotate(45deg) skew(-45deg);
+    -webkit-transform: translate(374px, 250px) rotate(45deg) skew(-45deg);
+    transform: translate(374px, 250px) rotate(45deg) skew(-45deg); }
+
+input[type=radio].button--turtle:checked ~ div.main--tangram,
+.tangram--turtle {
+  padding: 0; }
+  input[type=radio].button--turtle:checked ~ div.main--tangram .triangle--pink,
+  .tangram--turtle .triangle--pink {
+    -moz-transform: translate(335px, 222px) rotate(180deg);
+    -o-transform: translate(335px, 222px) rotate(180deg);
+    -ms-transform: translate(335px, 222px) rotate(180deg);
+    -webkit-transform: translate(335px, 222px) rotate(180deg);
+    transform: translate(335px, 222px) rotate(180deg); }
+  input[type=radio].button--turtle:checked ~ div.main--tangram .triangle--purple,
+  .tangram--turtle .triangle--purple {
+    -moz-transform: translate(133px, 225px) rotate(0deg);
+    -o-transform: translate(133px, 225px) rotate(0deg);
+    -ms-transform: translate(133px, 225px) rotate(0deg);
+    -webkit-transform: translate(133px, 225px) rotate(0deg);
+    transform: translate(133px, 225px) rotate(0deg); }
+  input[type=radio].button--turtle:checked ~ div.main--tangram .triangle--turquoise,
+  .tangram--turtle .triangle--turquoise {
+    -moz-transform: translate(335px, 127px) rotate(0deg);
+    -o-transform: translate(335px, 127px) rotate(0deg);
+    -ms-transform: translate(335px, 127px) rotate(0deg);
+    -webkit-transform: translate(335px, 127px) rotate(0deg);
+    transform: translate(335px, 127px) rotate(0deg); }
+  input[type=radio].button--turtle:checked ~ div.main--tangram .triangle--yellow,
+  .tangram--turtle .triangle--yellow {
+    -moz-transform: translate(246px, 62px) rotate(-45deg);
+    -o-transform: translate(246px, 62px) rotate(-45deg);
+    -ms-transform: translate(246px, 62px) rotate(-45deg);
+    -webkit-transform: translate(246px, 62px) rotate(-45deg);
+    transform: translate(246px, 62px) rotate(-45deg); }
+  input[type=radio].button--turtle:checked ~ div.main--tangram .triangle--orange,
+  .tangram--turtle .triangle--orange {
+    -moz-transform: translate(172px, 135px) rotate(135deg);
+    -o-transform: translate(172px, 135px) rotate(135deg);
+    -ms-transform: translate(172px, 135px) rotate(135deg);
+    -webkit-transform: translate(172px, 135px) rotate(135deg);
+    transform: translate(172px, 135px) rotate(135deg); }
+  input[type=radio].button--turtle:checked ~ div.main--tangram .square--red,
+  .tangram--turtle .square--red {
+    -moz-transform: translate(40px, 130px) rotate(0deg);
+    -o-transform: translate(40px, 130px) rotate(0deg);
+    -ms-transform: translate(40px, 130px) rotate(0deg);
+    -webkit-transform: translate(40px, 130px) rotate(0deg);
+    transform: translate(40px, 130px) rotate(0deg); }
+  input[type=radio].button--turtle:checked ~ div.main--tangram .parallelogram--green,
+  .tangram--turtle .parallelogram--green {
+    -moz-transform: translate(114px, 166px) rotate(-90deg) skew(-45deg);
+    -o-transform: translate(114px, 166px) rotate(-90deg) skew(-45deg);
+    -ms-transform: translate(114px, 166px) rotate(-90deg) skew(-45deg);
+    -webkit-transform: translate(114px, 166px) rotate(-90deg) skew(-45deg);
+    transform: translate(114px, 166px) rotate(-90deg) skew(-45deg);
+    width: 69px; }
+
+input[type=radio].button--lion:checked ~ div.main--tangram,
+.tangram--lion {
+  padding: 10px 0 0 0;
+  margin-left: -40px;
+  -moz-transform: scale(0.9);
+  -o-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  -webkit-transform: scale(0.9);
+  transform: scale(0.9); }
+  input[type=radio].button--lion:checked ~ div.main--tangram .triangle--pink,
+  .tangram--lion .triangle--pink {
+    -moz-transform: translate(306px, 238px) rotate(-90deg);
+    -o-transform: translate(306px, 238px) rotate(-90deg);
+    -ms-transform: translate(306px, 238px) rotate(-90deg);
+    -webkit-transform: translate(306px, 238px) rotate(-90deg);
+    transform: translate(306px, 238px) rotate(-90deg); }
+  input[type=radio].button--lion:checked ~ div.main--tangram .triangle--purple,
+  .tangram--lion .triangle--purple {
+    -moz-transform: translate(163px, 206px) rotate(225deg);
+    -o-transform: translate(163px, 206px) rotate(225deg);
+    -ms-transform: translate(163px, 206px) rotate(225deg);
+    -webkit-transform: translate(163px, 206px) rotate(225deg);
+    transform: translate(163px, 206px) rotate(225deg); }
+  input[type=radio].button--lion:checked ~ div.main--tangram .triangle--turquoise,
+  .tangram--lion .triangle--turquoise {
+    -moz-transform: translate(193px, 140px) rotate(135deg);
+    -o-transform: translate(193px, 140px) rotate(135deg);
+    -ms-transform: translate(193px, 140px) rotate(135deg);
+    -webkit-transform: translate(193px, 140px) rotate(135deg);
+    transform: translate(193px, 140px) rotate(135deg); }
+  input[type=radio].button--lion:checked ~ div.main--tangram .triangle--yellow,
+  .tangram--lion .triangle--yellow {
+    -moz-transform: translate(114px, 29px) rotate(-45deg);
+    -o-transform: translate(114px, 29px) rotate(-45deg);
+    -ms-transform: translate(114px, 29px) rotate(-45deg);
+    -webkit-transform: translate(114px, 29px) rotate(-45deg);
+    transform: translate(114px, 29px) rotate(-45deg); }
+  input[type=radio].button--lion:checked ~ div.main--tangram .triangle--orange,
+  .tangram--lion .triangle--orange {
+    -moz-transform: translate(299px, 106px) rotate(-45deg);
+    -o-transform: translate(299px, 106px) rotate(-45deg);
+    -ms-transform: translate(299px, 106px) rotate(-45deg);
+    -webkit-transform: translate(299px, 106px) rotate(-45deg);
+    transform: translate(299px, 106px) rotate(-45deg); }
+  input[type=radio].button--lion:checked ~ div.main--tangram .square--red,
+  .tangram--lion .square--red {
+    -moz-transform: translate(60px, 150px) rotate(45deg);
+    -o-transform: translate(60px, 150px) rotate(45deg);
+    -ms-transform: translate(60px, 150px) rotate(45deg);
+    -webkit-transform: translate(60px, 150px) rotate(45deg);
+    transform: translate(60px, 150px) rotate(45deg); }
+  input[type=radio].button--lion:checked ~ div.main--tangram .parallelogram--green,
+  .tangram--lion .parallelogram--green {
+    -moz-transform: translate(410px, 187px) rotate(-110deg) skew(-45deg);
+    -o-transform: translate(410px, 187px) rotate(-110deg) skew(-45deg);
+    -ms-transform: translate(410px, 187px) rotate(-110deg) skew(-45deg);
+    -webkit-transform: translate(410px, 187px) rotate(-110deg) skew(-45deg);
+    transform: translate(410px, 187px) rotate(-110deg) skew(-45deg); }
+
+input[type=radio].button--butterfly:checked ~ div.main--tangram,
+.tangram--butterfly {
+  padding: 40px 0 0 30px;
+  -moz-transform: rotate(-30deg);
+  -o-transform: rotate(-30deg);
+  -ms-transform: rotate(-30deg);
+  -webkit-transform: rotate(-30deg);
+  transform: rotate(-30deg); }
+  input[type=radio].button--butterfly:checked ~ div.main--tangram .triangle--pink,
+  .tangram--butterfly .triangle--pink {
+    -moz-transform: translate(118px, 240px) rotate(240deg);
+    -o-transform: translate(118px, 240px) rotate(240deg);
+    -ms-transform: translate(118px, 240px) rotate(240deg);
+    -webkit-transform: translate(118px, 240px) rotate(240deg);
+    transform: translate(118px, 240px) rotate(240deg); }
+  input[type=radio].button--butterfly:checked ~ div.main--tangram .triangle--purple,
+  .tangram--butterfly .triangle--purple {
+    -moz-transform: translate(147px, 130px) rotate(150deg);
+    -o-transform: translate(147px, 130px) rotate(150deg);
+    -ms-transform: translate(147px, 130px) rotate(150deg);
+    -webkit-transform: translate(147px, 130px) rotate(150deg);
+    transform: translate(147px, 130px) rotate(150deg); }
+  input[type=radio].button--butterfly:checked ~ div.main--tangram .triangle--turquoise,
+  .tangram--butterfly .triangle--turquoise {
+    -moz-transform: translate(244px, 196px) rotate(160deg);
+    -o-transform: translate(244px, 196px) rotate(160deg);
+    -ms-transform: translate(244px, 196px) rotate(160deg);
+    -webkit-transform: translate(244px, 196px) rotate(160deg);
+    transform: translate(244px, 196px) rotate(160deg); }
+  input[type=radio].button--butterfly:checked ~ div.main--tangram .triangle--yellow,
+  .tangram--butterfly .triangle--yellow {
+    -moz-transform: translate(70px, 50px) rotate(-30deg);
+    -o-transform: translate(70px, 50px) rotate(-30deg);
+    -ms-transform: translate(70px, 50px) rotate(-30deg);
+    -webkit-transform: translate(70px, 50px) rotate(-30deg);
+    transform: translate(70px, 50px) rotate(-30deg); }
+  input[type=radio].button--butterfly:checked ~ div.main--tangram .triangle--orange,
+  .tangram--butterfly .triangle--orange {
+    -moz-transform: translate(263px, 42px) rotate(205deg);
+    -o-transform: translate(263px, 42px) rotate(205deg);
+    -ms-transform: translate(263px, 42px) rotate(205deg);
+    -webkit-transform: translate(263px, 42px) rotate(205deg);
+    transform: translate(263px, 42px) rotate(205deg); }
+  input[type=radio].button--butterfly:checked ~ div.main--tangram .square--red,
+  .tangram--butterfly .square--red {
+    -moz-transform: translate(139px, 204px) rotate(15deg);
+    -o-transform: translate(139px, 204px) rotate(15deg);
+    -ms-transform: translate(139px, 204px) rotate(15deg);
+    -webkit-transform: translate(139px, 204px) rotate(15deg);
+    transform: translate(139px, 204px) rotate(15deg); }
+  input[type=radio].button--butterfly:checked ~ div.main--tangram .parallelogram--green,
+  .tangram--butterfly .parallelogram--green {
+    -moz-transform: translate(222px, 163px) rotate(70deg) skew(45deg);
+    -o-transform: translate(222px, 163px) rotate(70deg) skew(45deg);
+    -ms-transform: translate(222px, 163px) rotate(70deg) skew(45deg);
+    -webkit-transform: translate(222px, 163px) rotate(70deg) skew(45deg);
+    transform: translate(222px, 163px) rotate(70deg) skew(45deg); }
+
+input[type=radio].button--camel:checked ~ div.main--tangram,
+.tangram--camel {
+  padding: 25px 0 0 40px; }
+  input[type=radio].button--camel:checked ~ div.main--tangram .triangle--pink,
+  .tangram--camel .triangle--pink {
+    -moz-transform: translate(77px, 48px) rotate(180deg);
+    -o-transform: translate(77px, 48px) rotate(180deg);
+    -ms-transform: translate(77px, 48px) rotate(180deg);
+    -webkit-transform: translate(77px, 48px) rotate(180deg);
+    transform: translate(77px, 48px) rotate(180deg); }
+  input[type=radio].button--camel:checked ~ div.main--tangram .triangle--purple,
+  .tangram--camel .triangle--purple {
+    -moz-transform: translate(50px, 20px) rotate(90deg);
+    -o-transform: translate(50px, 20px) rotate(90deg);
+    -ms-transform: translate(50px, 20px) rotate(90deg);
+    -webkit-transform: translate(50px, 20px) rotate(90deg);
+    transform: translate(50px, 20px) rotate(90deg); }
+  input[type=radio].button--camel:checked ~ div.main--tangram .triangle--turquoise,
+  .tangram--camel .triangle--turquoise {
+    -moz-transform: translate(219px, 93px) rotate(-90deg);
+    -o-transform: translate(219px, 93px) rotate(-90deg);
+    -ms-transform: translate(219px, 93px) rotate(-90deg);
+    -webkit-transform: translate(219px, 93px) rotate(-90deg);
+    transform: translate(219px, 93px) rotate(-90deg); }
+  input[type=radio].button--camel:checked ~ div.main--tangram .triangle--yellow,
+  .tangram--camel .triangle--yellow {
+    -moz-transform: translate(130px, 154px) rotate(0deg);
+    -o-transform: translate(130px, 154px) rotate(0deg);
+    -ms-transform: translate(130px, 154px) rotate(0deg);
+    -webkit-transform: translate(130px, 154px) rotate(0deg);
+    transform: translate(130px, 154px) rotate(0deg); }
+  input[type=radio].button--camel:checked ~ div.main--tangram .triangle--orange,
+  .tangram--camel .triangle--orange {
+    -moz-transform: translate(239px, 137px) rotate(-45deg);
+    -o-transform: translate(239px, 137px) rotate(-45deg);
+    -ms-transform: translate(239px, 137px) rotate(-45deg);
+    -webkit-transform: translate(239px, 137px) rotate(-45deg);
+    transform: translate(239px, 137px) rotate(-45deg); }
+  input[type=radio].button--camel:checked ~ div.main--tangram .square--red,
+  .tangram--camel .square--red {
+    -moz-transform: translate(144px, 113px) rotate(45deg);
+    -o-transform: translate(144px, 113px) rotate(45deg);
+    -ms-transform: translate(144px, 113px) rotate(45deg);
+    -webkit-transform: translate(144px, 113px) rotate(45deg);
+    transform: translate(144px, 113px) rotate(45deg); }
+  input[type=radio].button--camel:checked ~ div.main--tangram .parallelogram--green,
+  .tangram--camel .parallelogram--green {
+    -moz-transform: translate(68px, 143px) rotate(45deg) skew(45deg);
+    -o-transform: translate(68px, 143px) rotate(45deg) skew(45deg);
+    -ms-transform: translate(68px, 143px) rotate(45deg) skew(45deg);
+    -webkit-transform: translate(68px, 143px) rotate(45deg) skew(45deg);
+    transform: translate(68px, 143px) rotate(45deg) skew(45deg);
+    width: 69px; }
+
+input[type=radio].button--dog:checked ~ div.main--tangram,
+.tangram--dog {
+  padding: 0; }
+  input[type=radio].button--dog:checked ~ div.main--tangram .triangle--pink,
+  .tangram--dog .triangle--pink {
+    -moz-transform: translate(102px, 32px) rotate(-90deg);
+    -o-transform: translate(102px, 32px) rotate(-90deg);
+    -ms-transform: translate(102px, 32px) rotate(-90deg);
+    -webkit-transform: translate(102px, 32px) rotate(-90deg);
+    transform: translate(102px, 32px) rotate(-90deg); }
+  input[type=radio].button--dog:checked ~ div.main--tangram .triangle--purple,
+  .tangram--dog .triangle--purple {
+    -moz-transform: translate(375px, 240px) rotate(0deg);
+    -o-transform: translate(375px, 240px) rotate(0deg);
+    -ms-transform: translate(375px, 240px) rotate(0deg);
+    -webkit-transform: translate(375px, 240px) rotate(0deg);
+    transform: translate(375px, 240px) rotate(0deg); }
+  input[type=radio].button--dog:checked ~ div.main--tangram .triangle--turquoise,
+  .tangram--dog .triangle--turquoise {
+    -moz-transform: translate(115px, 164px) rotate(135deg);
+    -o-transform: translate(115px, 164px) rotate(135deg);
+    -ms-transform: translate(115px, 164px) rotate(135deg);
+    -webkit-transform: translate(115px, 164px) rotate(135deg);
+    transform: translate(115px, 164px) rotate(135deg); }
+  input[type=radio].button--dog:checked ~ div.main--tangram .triangle--yellow,
+  .tangram--dog .triangle--yellow {
+    -moz-transform: translate(178px, 107px) rotate(90deg);
+    -o-transform: translate(178px, 107px) rotate(90deg);
+    -ms-transform: translate(178px, 107px) rotate(90deg);
+    -webkit-transform: translate(178px, 107px) rotate(90deg);
+    transform: translate(178px, 107px) rotate(90deg); }
+  input[type=radio].button--dog:checked ~ div.main--tangram .triangle--orange,
+  .tangram--dog .triangle--orange {
+    -moz-transform: translate(287px, 123px) rotate(45deg);
+    -o-transform: translate(287px, 123px) rotate(45deg);
+    -ms-transform: translate(287px, 123px) rotate(45deg);
+    -webkit-transform: translate(287px, 123px) rotate(45deg);
+    transform: translate(287px, 123px) rotate(45deg); }
+  input[type=radio].button--dog:checked ~ div.main--tangram .square--red,
+  .tangram--dog .square--red {
+    -moz-transform: translate(40px, 123px) rotate(45deg);
+    -o-transform: translate(40px, 123px) rotate(45deg);
+    -ms-transform: translate(40px, 123px) rotate(45deg);
+    -webkit-transform: translate(40px, 123px) rotate(45deg);
+    transform: translate(40px, 123px) rotate(45deg); }
+  input[type=radio].button--dog:checked ~ div.main--tangram .parallelogram--green,
+  .tangram--dog .parallelogram--green {
+    -moz-transform: translate(89px, 262px) rotate(0deg) skew(-45deg);
+    -o-transform: translate(89px, 262px) rotate(0deg) skew(-45deg);
+    -ms-transform: translate(89px, 262px) rotate(0deg) skew(-45deg);
+    -webkit-transform: translate(89px, 262px) rotate(0deg) skew(-45deg);
+    transform: translate(89px, 262px) rotate(0deg) skew(-45deg); }
+
+input[type=radio].button--horse:checked ~ div.main--tangram,
+.tangram--horse {
+  padding: 0 0 0 20px;
+  margin-top: -10px; }
+  input[type=radio].button--horse:checked ~ div.main--tangram .triangle--pink,
+  .tangram--horse .triangle--pink {
+    -moz-transform: translate(183px, 347px) rotate(45deg);
+    -o-transform: translate(183px, 347px) rotate(45deg);
+    -ms-transform: translate(183px, 347px) rotate(45deg);
+    -webkit-transform: translate(183px, 347px) rotate(45deg);
+    transform: translate(183px, 347px) rotate(45deg); }
+  input[type=radio].button--horse:checked ~ div.main--tangram .triangle--purple,
+  .tangram--horse .triangle--purple {
+    -moz-transform: translate(55px, 158px) rotate(-90deg);
+    -o-transform: translate(55px, 158px) rotate(-90deg);
+    -ms-transform: translate(55px, 158px) rotate(-90deg);
+    -webkit-transform: translate(55px, 158px) rotate(-90deg);
+    transform: translate(55px, 158px) rotate(-90deg); }
+  input[type=radio].button--horse:checked ~ div.main--tangram .triangle--turquoise,
+  .tangram--horse .triangle--turquoise {
+    -moz-transform: translate(120px, 0px) rotate(-90deg);
+    -o-transform: translate(120px, 0px) rotate(-90deg);
+    -ms-transform: translate(120px, 0px) rotate(-90deg);
+    -webkit-transform: translate(120px, 0px) rotate(-90deg);
+    transform: translate(120px, 0px) rotate(-90deg); }
+  input[type=radio].button--horse:checked ~ div.main--tangram .triangle--yellow,
+  .tangram--horse .triangle--yellow {
+    -moz-transform: translate(140px, 117px) rotate(-45deg);
+    -o-transform: translate(140px, 117px) rotate(-45deg);
+    -ms-transform: translate(140px, 117px) rotate(-45deg);
+    -webkit-transform: translate(140px, 117px) rotate(-45deg);
+    transform: translate(140px, 117px) rotate(-45deg); }
+  input[type=radio].button--horse:checked ~ div.main--tangram .triangle--orange,
+  .tangram--horse .triangle--orange {
+    -moz-transform: translate(229px, 182px) rotate(0deg);
+    -o-transform: translate(229px, 182px) rotate(0deg);
+    -ms-transform: translate(229px, 182px) rotate(0deg);
+    -webkit-transform: translate(229px, 182px) rotate(0deg);
+    transform: translate(229px, 182px) rotate(0deg); }
+  input[type=radio].button--horse:checked ~ div.main--tangram .square--red,
+  .tangram--horse .square--red {
+    -moz-transform: translate(155px, 108px) rotate(0deg);
+    -o-transform: translate(155px, 108px) rotate(0deg);
+    -ms-transform: translate(155px, 108px) rotate(0deg);
+    -webkit-transform: translate(155px, 108px) rotate(0deg);
+    transform: translate(155px, 108px) rotate(0deg); }
+  input[type=radio].button--horse:checked ~ div.main--tangram .parallelogram--green,
+  .tangram--horse .parallelogram--green {
+    -moz-transform: translate(301px, 325px) rotate(-65deg) skew(-45deg);
+    -o-transform: translate(301px, 325px) rotate(-65deg) skew(-45deg);
+    -ms-transform: translate(301px, 325px) rotate(-65deg) skew(-45deg);
+    -webkit-transform: translate(301px, 325px) rotate(-65deg) skew(-45deg);
+    transform: translate(301px, 325px) rotate(-65deg) skew(-45deg); }
+
+input[type=radio].button--squirrel:checked ~ div.main--tangram,
+.tangram--squirrel {
+  padding: 0; }
+  input[type=radio].button--squirrel:checked ~ div.main--tangram .triangle--pink,
+  .tangram--squirrel .triangle--pink {
+    -moz-transform: translate(249px, 300px) rotate(135deg);
+    -o-transform: translate(249px, 300px) rotate(135deg);
+    -ms-transform: translate(249px, 300px) rotate(135deg);
+    -webkit-transform: translate(249px, 300px) rotate(135deg);
+    transform: translate(249px, 300px) rotate(135deg); }
+  input[type=radio].button--squirrel:checked ~ div.main--tangram .triangle--purple,
+  .tangram--squirrel .triangle--purple {
+    -moz-transform: translate(99px, 221px) rotate(180deg);
+    -o-transform: translate(99px, 221px) rotate(180deg);
+    -ms-transform: translate(99px, 221px) rotate(180deg);
+    -webkit-transform: translate(99px, 221px) rotate(180deg);
+    transform: translate(99px, 221px) rotate(180deg); }
+  input[type=radio].button--squirrel:checked ~ div.main--tangram .triangle--turquoise,
+  .tangram--squirrel .triangle--turquoise {
+    -moz-transform: translate(90px, 74px) rotate(45deg);
+    -o-transform: translate(90px, 74px) rotate(45deg);
+    -ms-transform: translate(90px, 74px) rotate(45deg);
+    -webkit-transform: translate(90px, 74px) rotate(45deg);
+    transform: translate(90px, 74px) rotate(45deg); }
+  input[type=radio].button--squirrel:checked ~ div.main--tangram .triangle--yellow,
+  .tangram--squirrel .triangle--yellow {
+    -moz-transform: translate(153px, 121px) rotate(0deg);
+    -o-transform: translate(153px, 121px) rotate(0deg);
+    -ms-transform: translate(153px, 121px) rotate(0deg);
+    -webkit-transform: translate(153px, 121px) rotate(0deg);
+    transform: translate(153px, 121px) rotate(0deg); }
+  input[type=radio].button--squirrel:checked ~ div.main--tangram .triangle--orange,
+  .tangram--squirrel .triangle--orange {
+    -moz-transform: translate(168px, 232px) rotate(45deg);
+    -o-transform: translate(168px, 232px) rotate(45deg);
+    -ms-transform: translate(168px, 232px) rotate(45deg);
+    -webkit-transform: translate(168px, 232px) rotate(45deg);
+    transform: translate(168px, 232px) rotate(45deg); }
+  input[type=radio].button--squirrel:checked ~ div.main--tangram .square--red,
+  .tangram--squirrel .square--red {
+    -moz-transform: translate(295px, 178px) rotate(45deg);
+    -o-transform: translate(295px, 178px) rotate(45deg);
+    -ms-transform: translate(295px, 178px) rotate(45deg);
+    -webkit-transform: translate(295px, 178px) rotate(45deg);
+    transform: translate(295px, 178px) rotate(45deg); }
+  input[type=radio].button--squirrel:checked ~ div.main--tangram .parallelogram--green,
+  .tangram--squirrel .parallelogram--green {
+    -moz-transform: translate(270px, 256px) rotate(45deg) skew(45deg);
+    -o-transform: translate(270px, 256px) rotate(45deg) skew(45deg);
+    -ms-transform: translate(270px, 256px) rotate(45deg) skew(45deg);
+    -webkit-transform: translate(270px, 256px) rotate(45deg) skew(45deg);
+    transform: translate(270px, 256px) rotate(45deg) skew(45deg);
+    width: 69px; }
+
+.buttons {
+  width: 750px;
+  position: absolute;
+  top: 0;
+  left: 0; }
+
+input[type="radio"] {
+  display: none; }
+
+input[type="radio"]:checked + label,
+label:hover {
+  background-color: rgba(240, 231, 223, 0.3);
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  line-height: 12px;
+  font-size: 1em;
+  color: #444;
+  font-family: "Roboto Condensed", sans-serif; }
+  input[type="radio"]:checked + label span,
+  label:hover span {
+    bottom: 12px;
+    text-align: center;
+    position: absolute;
+    width: 100%; }
+
+label:hover {
+  background-color: rgba(240, 231, 223, 0.6); }
+
+.tangram__button {
+  width: 150px;
+  height: 150px;
+  float: left;
+  position: relative; }
+  .tangram__button:nth-child(7), .tangram__button:nth-child(9), .tangram__button:nth-child(11) {
+    margin-left: 450px; }
+  .tangram__button:nth-child(1), .tangram__button:nth-child(2), .tangram__button:nth-child(3), .tangram__button:nth-child(4), .tangram__button:nth-child(12), .tangram__button:nth-child(13), .tangram__button:nth-child(14), .tangram__button:nth-child(15) {
+    border-right: 1px solid #f0e7df; }
+  .tangram__button:nth-child(6), .tangram__button:nth-child(7) {
+    border-top: 1px solid #f0e7df; }
+  .tangram__button:nth-child(6), .tangram__button:nth-child(7), .tangram__button:nth-child(8), .tangram__button:nth-child(9), .tangram__button:nth-child(10), .tangram__button:nth-child(11) {
+    border-bottom: 1px solid #f0e7df; }
+
+label {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+  width: 150px;
+  height: 150px;
+  cursor: pointer;
+  background-color: transparent;
+  float: left;
+  position: relative; }
+  label:nth-child(14), label:nth-child(18), label:nth-child(22) {
+    margin-left: 450px; }
+  label:nth-child(1), label:nth-child(2), label:nth-child(3), label:nth-child(4), label:nth-child(12), label:nth-child(13), label:nth-child(14), label:nth-child(15) {
+    border-right: none; }
+  label:nth-child(6), label:nth-child(7) {
+    border-top: none; }
+  label:nth-child(6), label:nth-child(7), label:nth-child(8), label:nth-child(9), label:nth-child(10), label:nth-child(11) {
+    border-bottom: none; }
+
+.tangram__button {
+  width: 150px;
+  height: 150px;
+  background-color: #FFFFFF;
+  float: left;
+  position: relative; }
+  .tangram__button .tangram {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    padding: 0;
+    top: 0;
+    left: 0; }
+  .tangram__button .tangram--basic {
+    -moz-transform: scale(0.3);
+    -o-transform: scale(0.3);
+    -ms-transform: scale(0.3);
+    -webkit-transform: scale(0.3);
+    transform: scale(0.3);
+    top: -9px;
+    left: -9px; }
+  .tangram__button .tangram--cat,
+  .tangram__button .tangram--rabbit {
+    -moz-transform: scale(0.2);
+    -o-transform: scale(0.2);
+    -ms-transform: scale(0.2);
+    -webkit-transform: scale(0.2);
+    transform: scale(0.2);
+    top: -24px;
+    left: -5px; }
+  .tangram__button .tangram--swan {
+    -moz-transform: scale(0.2);
+    -o-transform: scale(0.2);
+    -ms-transform: scale(0.2);
+    -webkit-transform: scale(0.2);
+    transform: scale(0.2);
+    top: -20px;
+    left: -9px; }
+  .tangram__button .tangram--bat {
+    -moz-transform: rotate(20deg) scale(0.25);
+    -o-transform: rotate(20deg) scale(0.25);
+    -ms-transform: rotate(20deg) scale(0.25);
+    -webkit-transform: rotate(20deg) scale(0.25);
+    transform: rotate(20deg) scale(0.25);
+    top: -40px;
+    left: -22px; }
+  .tangram__button .tangram--bear {
+    -moz-transform: scale(0.22);
+    -o-transform: scale(0.22);
+    -ms-transform: scale(0.22);
+    -webkit-transform: scale(0.22);
+    transform: scale(0.22);
+    top: -30px;
+    left: -34px; }
+  .tangram__button .tangram--giraffe {
+    -moz-transform: scale(0.22);
+    -o-transform: scale(0.22);
+    -ms-transform: scale(0.22);
+    -webkit-transform: scale(0.22);
+    transform: scale(0.22);
+    top: -17px;
+    left: -29px; }
+  .tangram__button .tangram--fish {
+    -moz-transform: scale(0.25);
+    -o-transform: scale(0.25);
+    -ms-transform: scale(0.25);
+    -webkit-transform: scale(0.25);
+    transform: scale(0.25);
+    top: -39px;
+    left: -25px; }
+  .tangram__button .tangram--snake {
+    -moz-transform: scale(0.2);
+    -o-transform: scale(0.2);
+    -ms-transform: scale(0.2);
+    -webkit-transform: scale(0.2);
+    transform: scale(0.2);
+    top: -35px;
+    left: -27px; }
+  .tangram__button .tangram--turtle {
+    -moz-transform: scale(0.23);
+    -o-transform: scale(0.23);
+    -ms-transform: scale(0.23);
+    -webkit-transform: scale(0.23);
+    transform: scale(0.23);
+    top: -34px;
+    left: -34px; }
+  .tangram__button .tangram--lion {
+    -moz-transform: scale(0.23);
+    -o-transform: scale(0.23);
+    -ms-transform: scale(0.23);
+    -webkit-transform: scale(0.23);
+    transform: scale(0.23);
+    top: -35px;
+    left: -4px; }
+  .tangram__button .tangram--butterfly {
+    -moz-transform: rotate(-30deg) scale(0.25);
+    -o-transform: rotate(-30deg) scale(0.25);
+    -ms-transform: rotate(-30deg) scale(0.25);
+    -webkit-transform: rotate(-30deg) scale(0.25);
+    transform: rotate(-30deg) scale(0.25);
+    top: -9px;
+    left: -42px; }
+  .tangram__button .tangram--camel {
+    -moz-transform: scale(0.22);
+    -o-transform: scale(0.22);
+    -ms-transform: scale(0.22);
+    -webkit-transform: scale(0.22);
+    transform: scale(0.22);
+    top: -25px;
+    left: -24px; }
+  .tangram__button .tangram--dog {
+    -moz-transform: scale(0.21);
+    -o-transform: scale(0.21);
+    -ms-transform: scale(0.21);
+    -webkit-transform: scale(0.21);
+    transform: scale(0.21);
+    top: -30px;
+    left: -30px; }
+  .tangram__button .tangram--horse {
+    -moz-transform: scale(0.21);
+    -o-transform: scale(0.21);
+    -ms-transform: scale(0.21);
+    -webkit-transform: scale(0.21);
+    transform: scale(0.21);
+    top: -25px;
+    left: -27px; }
+  .tangram__button .tangram--squirrel {
+    -moz-transform: scale(0.23);
+    -o-transform: scale(0.23);
+    -ms-transform: scale(0.23);
+    -webkit-transform: scale(0.23);
+    transform: scale(0.23);
+    top: -39px;
+    left: -32px; }
+
+/*# sourceMappingURL=main.css.map */

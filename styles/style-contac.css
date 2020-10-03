@@ -1,0 +1,204 @@
+
+:root {
+    --color1: rgba(242, 41, 115, 1);
+    --color2: rgb(182, 221, 39);
+    --color3: rgba(3, 39, 55, 1);
+    --color3d: rgb(5, 30, 45);
+    --color4: rgba(255, 205, 132, 1);
+    --color5: rgb(44, 189, 222);
+    --sombra: rgba(0, 0, 0, 0.5);
+    --fondo: rgba(255, 255, 255, 1);
+    --titulos: 33px;
+    --margenes: 60px;
+    --espacios: 10px;
+    --espacios-contenido: 45px;
+  }
+  
+.container{
+	max-width:1140px;
+	margin:auto;
+	position: relative;
+	min-height: 1px;
+
+	/* display: flex; */
+	/* justify-content: center; */
+	text-align: center;
+}
+
+.team{
+	min-height: 100vh;
+	padding:60px 15px;
+	/* background-color:var(--fondo); */
+	/* float: left; */
+	width: 100%;
+}
+
+h1 {
+	text-align: center;
+}
+.team h1{
+	font-size: 36px;
+	font-family: Texto;
+	font-weight: 700;
+	color:var(--color1);
+	margin:0;
+	padding-bottom:60px;
+	text-align: center;
+}
+.team .card{
+	width:25%;
+	float: left;
+	padding:0px 15px;
+}
+.team .card .box {
+    
+	padding:15px;
+	background-color: var(--color3);
+	border-radius:10px;
+	transition: margin 1s ease,box-shadow 1s ease;
+	box-shadow: 0 0 5px black;
+	text-align: center;
+	height: 480px;
+}
+
+.team .card .box > button {
+    position: relative;
+    bottom: 10px;
+}
+
+body.dark .team .card .box {
+	box-shadow: 0 0 5px white;
+}
+
+.team .card .box:hover{
+	margin-top:-15px;
+	box-shadow:0px 0px 40px black;
+}
+body.dark .team .card .box:hover {
+	box-shadow: 0 0 40px white;
+}
+
+
+.team .card .box img{
+    position: relative;
+    overflow: hidden;
+    width: 100px;
+    height: 200px;
+	width:150px;
+	display: block;
+	margin:10px auto;
+	border-radius:10%;
+
+}
+
+.team .card .box h4{
+	font-size: 20px;
+	/* font-family: open sans; */
+	margin:20px 0px 10px;
+	color:var(--color1);
+	text-align: center;
+	font-weight: 700;
+}
+
+.team .card .box h5{
+	font-size:16px;
+	/* font-family: open sans; */
+	font-weight: 600;
+	color:#b9b9b9;
+	margin:0px 0px 15px;
+	text-align: center;
+}
+.team .card .box p{
+	color:#b9b9b9;
+	font-size: 15px;
+	/* font-family: open sans; */
+	font-weight: 400;
+	line-height: 24px;
+	text-align: center;
+	padding:0px 20px;
+}
+
+/* para el boton */
+
+.boton{
+	position: relative;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	color: var(--color3);
+	text-decoration: none;
+	font-size: 10pt;
+	display: inline-block;
+	font-family: Texto;
+	font-weight: bold;
+	text-transform: uppercase;
+	padding: 0.5em 2em;
+	border: 2px solid var(--color2);
+	transition: 0.02s 0.2s cubic-bezier(0.1, 0, 0.1, 1);
+	cursor: pointer;
+  }
+  .boton::before {
+	content: "";
+	display: inline-block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 100%;
+	bottom: 0;
+	background: var(--color2);
+	transition: 0.3s 0.2s cubic-bezier(0.1, 0, 0.1, 1), left 0.3s cubic-bezier(0.1, 0, 0.1, 1);
+	z-index: -1;
+  }
+  .boton::after {
+	content: "";
+	display: inline-block;
+	background-image: url(../img/enviar.png);
+	position: absolute;
+	top: 0;
+	left: calc(100% - 3em);
+	right: 3em;
+	bottom: 0;
+	background-size: 1.5em;
+	background-repeat: no-repeat;
+	background-position: center;
+	transition: right 0.3s cubic-bezier(0.1, 0, 0.1, 1);
+  }
+  .boton:hover {
+	padding: 0.5em 3.5em 0.5em 0.5em;
+  }
+  .boton:hover::before {
+	left: calc(100% - 3em);
+	right: 0;
+	transition: 0.3s cubic-bezier(0.1, 0, 0.1, 1), left 0.3s 0.2s cubic-bezier(0.1, 0, 0.1, 1);
+  }
+  .boton:hover::after {
+	right: 0;
+	transition: right 0.3s 0.2s cubic-bezier(0.1, 0, 0.1, 1);
+  }
+  
+
+/*responsive*/
+
+@media(max-width: 800px){
+	.team .card{
+		width:100%;
+		margin-bottom:30px;
+	}
+}
+
+@media(max-width:480px){
+	.team .card{
+		width:100%;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
