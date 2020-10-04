@@ -141,12 +141,13 @@
         <section class="seccion">
             <div class="introduccion">
                 <h1 id="introduccion">UAPALITL</h1> <br>
-                <p>Aqui encontraras alguna informacion importante en el desarrollo del STEAM en conjunto con la NASA</p> <br>
+                <p>Aqui encontraras alguna informacion importante en el desarrollo del STEAM en conjunto con la NASA</p>
+                <br>
 
             </div>
 
-            
-            
+
+
 
             <div class="diseño">
 
@@ -178,42 +179,56 @@
                 </div> <br> <br>
                 <br>
                 <div class="galeria">
-                <!-- <h1>Galeria Efecto Overlay</h1> -->
-                <!-- <div class="linea"></div> -->
-                <div class="contenedor-imagenes">
-                    <!-- <h2></h2> -->
-                    <div class="imagen">
-                        <img src="img/galeria1.jpg" alt="">
-                        <div class="overlay">
-                            <h2>Espacio</h2>
-                            <p>Amaj iuan nochipa tonalli nelia xiyolpakto.</p>
+                    <!-- <h1>Galeria Efecto Overlay</h1> -->
+                    <!-- <div class="linea"></div> -->
+                    <div class="contenedor-imagenes">
+                        <!-- <h2></h2> -->
+                        <div class="imagen">
+                            <a href="articulo copy 2.php">
+                                <img src="img/galeria1.jpg" alt="">
+                                <div class="overlay">
+                                    <h2>Espacio</h2>
+                                    <p>Amaj iuan nochipa tonalli nelia xiyolpakto.</p>
+                                </div>
+                            </a>
                         </div>
-                    </div>
-                    <div class="imagen">
-                        <img src="img/galeria2.jpg" alt="">
-                        <div class="overlay">
-                            <h2>Luna</h2>
-                            <p>Amaj iuan nochipa ma mitsuanti tlauilpakilistli.</p>
+                        <div class="imagen">
+                            <a href="articulo.php">
+                                <img src="img/galeria2.jpg" alt="">
+                                <div class="overlay">
+                                    <h2>Luna</h2>
+                                    <p>Amaj iuan nochipa ma mitsuanti tlauilpakilistli.</p>
+                                </div>
+                            </a>
+
+
                         </div>
-                    </div>
-                    <div class="imagen">
-                        <img src="img/galeria3.jpg" alt="">
-                        <div class="overlay">
-                            <h2>Robótica</h2>
-                            <p>Ika miak tlasotlalistli xikonselli ni pilmentsin nemaktli.</p>
+                        <div class="imagen">
+                            <a href="articulo copy 3.php">
+                                <img src="img/galeria3.jpg" alt="">
+                                <div class="overlay">
+                                    <h2>Robótica</h2>
+                                    <p>Ika miak tlasotlalistli xikonselli ni pilmentsin nemaktli.</p>
+                                </div>
+                            </a>
+
+
                         </div>
-                    </div>
-                    <div class="imagen">
-                        <img src="img/galeria4.png" alt="">
-                        <div class="overlay">
-                            <h2>Jupiter</h2>
-                            <p>Kani tiwalaj, ma titlajtokan totlajtol nochipa.</p>
+                        <div class="imagen">
+                            <a href="articulo copy.php">
+                                <img src="img/galeria4.png" alt="">
+                                <div class="overlay">
+                                    <h2>Jupiter</h2>
+                                    <p>Kani tiwalaj, ma titlajtokan totlajtol nochipa.</p>
+                                </div>
+                            </a>
+
+
                         </div>
+
                     </div>
 
                 </div>
-               
-            </div>
         </section>
         </div>
 
